@@ -1,13 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>NOVA IMPÉRIA - Formations Premium & Accompagnement Professionnel</title>
+    <meta name="description" content="Transformez votre expertise avec nos formations premium et accompagnements personnalisés. Plus de 500 professionnels formés, 95% de satisfaction. Organisme certifié." />
+    <meta name="keywords" content="formation professionnelle, coaching, entreprise, management, marketing digital, leadership, NOVA IMPÉRIA" />
+    <meta name="author" content="NOVA IMPÉRIA" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NOVA IMPÉRIA - L'Excellence au Service de Vos Ambitions" />
+    <meta property="og:description" content="Formations premium et accompagnement personnalisé pour développer vos compétences professionnelles." />
+    <meta property="og:url" content="https://nova-imperia.fr" />
+    <meta property="og:site_name" content="NOVA IMPÉRIA" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NOVA IMPÉRIA - Formations Premium" />
+    <meta name="twitter:description" content="Transformez votre expertise avec nos formations premium et accompagnements personnalisés." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" href="/vite.svg" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#f5b800" />
+    
+    <!-- Mobile Optimization -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="NOVA IMPÉRIA" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    
+    <!-- Performance Hints -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "NOVA IMPÉRIA",
+      "description": "Organisme de formation spécialisé dans l'accompagnement des entrepreneurs et professionnels",
+      "url": "https://nova-imperia.fr",
+      "telephone": "+33123456789",
+      "email": "contact@nova-imperia.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "500",
+        "bestRating": "5"
+      },
+      "offers": {
+        "@type": "Offer",
+        "category": "Formation Professionnelle",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <noscript>
+      <div style="padding: 20px; text-align: center; background: #f5b800; color: white;">
+        <h1>NOVA IMPÉRIA</h1>
+        <p>Pour une expérience optimale, veuillez activer JavaScript dans votre navigateur.</p>
+        <p>Contactez-nous directement au +33 1 23 45 67 89 ou par email à contact@nova-imperia.fr</p>
+      </div>
+    </noscript>
+    
+    <div id="root" role="main"></div>
+    
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-500 text-white px-4 py-2 rounded-lg z-50">
+      Aller au contenu principal
+    </a>
+    
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
