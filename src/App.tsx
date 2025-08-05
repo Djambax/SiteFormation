@@ -1,34 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Layout from './components/layout/Layout'
+import Hero from './components/sections/Hero'
+import Formations from './components/sections/Formations'
+import ValuePropositions from './components/sections/ValuePropositions'
+import Testimonials from './components/sections/Testimonials'
+import ContactCTA from './components/sections/ContactCTA'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Layout>
+      {/* Hero Section */}
+      <Hero />
+
+      {/* Formations Section */}
+      <Formations />
+
+      {/* Value Propositions Section */}
+      <ValuePropositions />
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* Contact CTA Section */}
+      <ContactCTA />
+
+      {/* Placeholder sections for navigation */}
+      <div id="prestations" className="section-padding bg-white">
+        <div className="container-custom text-center">
+          <h2 className="heading-lg text-secondary-800 mb-4">Prestations</h2>
+          <p className="text-secondary-600">Section en cours de développement...</p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+      <div id="apropos" className="section-padding bg-secondary-50">
+        <div className="container-custom text-center">
+          <h2 className="heading-lg text-secondary-800 mb-4">À Propos</h2>
+          <p className="text-secondary-600">Section en cours de développement...</p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+      {/* Hidden contact anchor for navigation */}
+      <div id="contact" />
+    </Layout>
   )
 }
 
